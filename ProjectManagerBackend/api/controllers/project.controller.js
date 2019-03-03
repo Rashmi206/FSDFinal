@@ -43,7 +43,7 @@ exports.get_project = function (req, res) {
     projectSchema.findById(req.params.id, function (err, project) {
         if (err)
             res.status(500).json({ msg: 'Error', err: err });
-        res.status(201).json(project);
+        res.json(project);
     });
 }
 
@@ -52,7 +52,7 @@ exports.save_project = function (req, res) {
     projectInstance.save(function (err, project) {
         if (err)
             res.status(500).json({ msg: 'Error', err: err });
-        res.json(project);
+        res.status(201).json(project);
     });
 }
 

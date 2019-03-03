@@ -12,7 +12,7 @@ exports.get_user = function (req, res) {
     userSchema.findById(req.params.id, function (err, user) {
         if (err)
             res.status(500).json({ msg: 'Error', err: err });
-        res.status(201).json(user);
+        res.json(user);
     });
 }
 
@@ -21,7 +21,7 @@ exports.save_user = function (req, res) {
     userInstance.save(function (err, user) {
         if (err)
             res.status(500).json({ msg: 'Error', err: err });
-        res.json(user);
+        res.status(201).json(user);
     });
 }
 
