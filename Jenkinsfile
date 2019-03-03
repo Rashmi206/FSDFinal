@@ -17,10 +17,7 @@ pipeline {
         stage('Testing Project Manager Frontend') {
             steps {
                 echo 'Testing Project Manager Frontend...'
-                bat 'npm install pm2 -g'
-                bat 'pm2 start ./ProjectManagerBackend/index.js'
-                bat 'cd ./ProjectManagerFrontend/ && npm test --single-run true --watch=false' 
-                bat 'pm2 stop index'               
+                bat 'cd ./ProjectManagerFrontend/ && npm test --single-run true --watch=false'     
             }
         }
         stage('Testing Project Manager Backend') {
