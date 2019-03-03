@@ -11,7 +11,7 @@ pipeline {
         stage('Build Project Manager Backend') {
             steps {
                 echo 'Building Project Manager Backend ..'
-                bat 'cd ./ProjectManagerBackend/ && npm install --no-optional && npm start'
+                bat 'cd ./ProjectManagerBackend/ && npm install'
             }
         }
         stage('Testing Project Manager Frontend') {
