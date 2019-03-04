@@ -17,7 +17,7 @@ pipeline {
         stage('Testing Project Manager Frontend') {
             steps {
                 echo 'Testing Project Manager Frontend...'
-                bat 'cd ./ProjectManagerFrontend/ && npm test'     
+                // bat 'cd ./ProjectManagerFrontend/ && npm test'     
             }
         }
         stage('Testing Project Manager Backend') {
