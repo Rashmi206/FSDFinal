@@ -17,13 +17,13 @@ pipeline {
         stage('Testing Project Manager Frontend') {
             steps {
                 echo 'Testing Project Manager Frontend...'
-                // bat 'cd ./ProjectManagerFrontend/ && npm test'     
+                bat 'cd ./ProjectManagerFrontend/ && npm test'     
             }
         }
         stage('Testing Project Manager Backend') {
             steps {
                 echo 'Testing Project Manager Backend...'
-                // bat 'cd ./TaskManagerBackend/ && npm test'
+                bat 'cd ./ProjectManagerBackend/ && npm test'
             }
         }
         stage('Deploy') {
