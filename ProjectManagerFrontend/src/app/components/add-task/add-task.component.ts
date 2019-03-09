@@ -173,6 +173,7 @@ export class AddTaskComponent implements OnInit {
         }
         this.taskService.addParentTask(parentTask).subscribe(data => {
           alert("Parent Task added successfully");
+          this.taskService.getAllParentTasks().subscribe(tasks => this.parentTasks = Object.assign([], tasks));
           this.resetFields();
         })
       }

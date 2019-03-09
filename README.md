@@ -14,3 +14,12 @@ To Run the Application
     Open another command prompt and go inside the ProjectManagerFrontend folder and type "npm install"
     Thus all the dependencies once installed, type "npm start" to run the web application
     Hit http://localhost:4200  to view the application.
+
+For Testing ProjectManagerBackend:
+    Open command prompt and type "npm test". It will generate coverage folder inside ProjectManagerBackend. Go to index.html to view the report. Ensure that, mongodb is running.
+
+For Testing ProjectManagerFrontend:
+    Open command prompt and type "ng test --code-coverage". It will generate coverage folder inside ProjectManagerFrontend. Go to index.html to view the report. Ensure that, mongodb and backend server is running.
+
+
+GITHub URL: https://github.com/Rashmi206/FSDFinal
