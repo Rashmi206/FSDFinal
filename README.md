@@ -12,5 +12,5 @@ To Run the Application
 
 4. Run ProjectManagerFrontend:
     Open another command prompt and go inside the ProjectManagerFrontend folder and type "npm install"
-    Thus all the dependencies once installed, type "ng serve" to run the web application
+    Thus all the dependencies once installed, type "npm start" to run the web application
     Hit http://localhost:4200  to view the application.
